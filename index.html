@@ -1,16 +1,12 @@
 <html>
 
 <head>
-    <script>
-        window.onload = function () {
-            document.getElementById("btn").click();
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/a2znote/notes/note.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>aNOTE - Online notepad</title>
     </body>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/h2244r/script/note.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/a2znote/notes/note.css">
     <h1 class="bttn-3d red">aNOTE</h1>
 
 <body>
@@ -19,9 +15,8 @@
         <div class="col-md-9">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title text-muted mb-0">Protected Link ==> <a style="font-size: 14px;"
-                            href="https://gplinks.co/aaa">GPLINKS.CO</a>
-                        <div></div>
+                    <h3 class="card-title text-muted mb-0">Protected Link ==> <a onclick="clk()" href="#"
+                            style="font-size: 14px;">GPLINKS.CO</a>
                     </h3>
                 </div>
                 <div class="card-body">
@@ -33,11 +28,15 @@
                             Protected Links</p>
                     </div>
                     <br>
-                    <p style="text-align: center;"> <a href="https://gplinks.co/aaa">https://gplinks.co/aaa</a></p>
+                    <div style="text-align: center;">
+                        <script>
+                            document.write('<a id="aaa1" href="' + final + '"></a>');
+                        </script>
+                    </div>
                     <p style="text-align: center;">Published on :: 25 March 2022</p>
                     <hr>
                     <div style="text-align: center;">
-                        <button style="display: none;" id="btn1" class="btn-3d red" onclick="clk()">
+                        <button id="btn1" class="btn-3d red" onclick="clk()">
                             Click Here !
                         </button>
                     </div>
@@ -50,8 +49,9 @@
     </div>
     <script>
         function clk() {
-            window.location = ("https://gplinks.co/aaa");
+            window.location = (final);
         }
+        document.getElementById("aaa1").innerHTML = final;
     </script>
 </body>
 
