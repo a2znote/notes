@@ -2,7 +2,7 @@ var hhhh = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
 
 
 function fhari() {
-document.write('<a id="aaa1" href="' + hhhh + '"></a>');
+document.write('<a id="aaa3" href="' + hhhh + '"></a>');
 }
 
 function aaa() {
