@@ -1,16 +1,5 @@
-function fhari() {
-    var hhhh = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
-    document.getElementById("phari").innerHTML = hhhh;
-}
-
-function aaa() {
-    var realurl = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
-    window.open(realurl, '_blank');
-}
-
 window.onload = function () {
     document.getElementById("btn").click();
-    document.getElementById("btnhari").click();
 }
 
 function shuffle(url) {
