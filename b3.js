@@ -2,8 +2,7 @@ var hhhh = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
 
 
 function fhari() {
-    var hhhh = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
-    document.getElementById("phari").innerHTML = hhhh;
+document.write('<a id="aaa1" href="' + hhhh + '"></a>');
 }
 
 function aaa() {
