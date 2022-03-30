@@ -1,5 +1,6 @@
 window.onload = function () {
     document.getElementById("btn").click();
+    document.getElementById("btnhari").click();
 }
 
 function shuffle(url) {
