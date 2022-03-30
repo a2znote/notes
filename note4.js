@@ -1,7 +1,7 @@
 function fhari() {
 
     var hhhh = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
-    document.getElementById("hari").innerHTML = hhhh;
+    document.getElementById("phari").innerHTML = hhhh;
 }
 
 function aaa() {
@@ -63,4 +63,3 @@ var suburl = ["Ag23M", "eWdsA", "Bfskl39g", "EPP3zsE4", "vPh4h1qW", "H4PY", "cwK
 var urls = shuffle(suburl)
 var random = Math.floor(Math.random() * urls.length);
 var final = ("https://www.gplinks.co/" + urls[random]);
-var hhhh = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
