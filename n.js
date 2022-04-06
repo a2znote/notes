@@ -1,7 +1,3 @@
-window.onload = function () {
-    document.getElementById("btn1").click();
-}
-
 function shuffle(url) {
     for (var i = url.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
